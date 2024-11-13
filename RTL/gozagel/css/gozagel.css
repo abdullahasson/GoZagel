@@ -66,6 +66,9 @@ html {
         right: auto;
         margin-top: 45px;
     }
+    .gozagel-hero-section .cta {
+        flex-direction: column;
+    } 
 }
 @media (max-width: 380px) {
     .gozagel-hero-section .cta {

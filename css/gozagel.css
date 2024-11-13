@@ -50,6 +50,9 @@ html {
     .gozagel-hero-section .hero-heading {
         font-size: 44px !important;
     }
+    .gozagel-hero-section .cta {
+        flex-direction: column;
+    } 
 }
 @media (max-width: 380px) {
     .gozagel-hero-section .cta {
