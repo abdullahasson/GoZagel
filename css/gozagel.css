@@ -9,6 +9,7 @@
 
 html {
     scroll-padding: 92px;
+    scroll-behavior: smooth !important;
 }
 
 .gozagel-header .gozagel-signUp-action {
