@@ -1,16 +1,86 @@
 :root {
     --main-color: #732154;
+
+    /* background color */
+    --bg-color-c1: #F9F9F9;
+
+
+    /* #FCF7EF */
     --sec-color: #FFC9D8;
-/* #E8E8E8
-#D33672
-#B6B6B6
-#FFC9D8 */
+    --color-c1:  #E8E8E8;
+    --color-c2:  #D33672;
+    --color-c3:  hsl(0, 0%, 71%);
+    --color-c4:  #FFC9D8;
+
+    /* button color */
+    --btn-bg-c1: #009688;
+    --btn-bg-c2: #FFC9D8;
+    --btn-txt-c1: #fff;
+    --btn-br-c1: #FFC9D8;
+
+
+    /* text color */
+    --txt-c1: #333333;
+
 }
 
 html {
     scroll-padding: 92px;
     scroll-behavior: smooth !important;
 }
+
+::-webkit-scrollbar-thumb {
+ background: var(--main-color) !important;
+}
+
+p {
+    color: var(--txt-c1) !important;
+}
+
+/* main button */
+.gozagel-btn-one {
+    /* background-color: var(--btn-bg-c1) !important; */
+    background: linear-gradient(to right, #732154, #A0528D) !important;
+    /* padding: 14px 40px !important; */
+    color: var(--btn-txt-c1) !important;
+    /* text-transform: uppercase !important; */
+    /* letter-spacing: 2px !important; */
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    /* border: 2px dashed #00BFA6 !important; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+    transition: .4s !important;
+    /* border-color: var(--btn-br-c1) !important; */
+    border: none !important;
+}
+
+.gozagel-btn-one:hover {
+    background: linear-gradient(to left, #732154, #A0528D) !important;
+}
+
+.gozagel-btn-two {
+    /* background-color: var(--btn-bg-c1) !important; */
+    background: #fff;
+    /* padding: 14px 40px !important; */
+    color: var(--main-color) !important;
+    /* text-transform: uppercase !important; */
+    /* letter-spacing: 2px !important; */
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    /* border: 2px dashed #00BFA6 !important; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+    transition: .4s !important;
+    border-color: var(--main-color) !important;
+    box-sizing: border-box;
+    /* border: none !important; */
+}
+
+.gozagel-btn-two:hover {
+    background: linear-gradient(to right, #732154, #A0528D) !important;
+    color: #fff !important;
+}
+
+
 
 .gozagel-header .gozagel-signUp-action {
     background-color: var(--main-color);
@@ -19,6 +89,10 @@ html {
     border-radius: 8px;
     color: #fff !important;
     text-align: center;
+}
+
+.gozagel-nav-header-link li:hover a {
+    color: var(--main-color) !important;
 }
 
 /* Pricing */

@@ -1,10 +1,12 @@
 :root {
     --main-color: #732154;
+    --bg-color-c1: #FCF7EF;
+    /* #FCF7EF */
     --sec-color: #FFC9D8;
-/* #E8E8E8
-#D33672
-#B6B6B6
-#FFC9D8 */
+    --color-c1:  #E8E8E8;
+    --color-c2:  #D33672;
+    --color-c3:  hsl(0, 0%, 71%);
+    --color-c4:  #FFC9D8;
 }
 
 * {
@@ -15,6 +17,34 @@ html {
     scroll-padding: 92px;
     scroll-behavior: smooth !important;
 }
+
+/* main button */
+.gozagel-btn-one {
+    background-color: var(--color-c2) !important;
+    /* padding: 14px 40px !important; */
+    color: #fff !important;
+    /* text-transform: uppercase !important; */
+    /* letter-spacing: 2px !important; */
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    /* border: 2px dashed #00BFA6 !important; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+    transition: .4s !important;
+    border-color: var(--color-c2) !important;
+}
+
+.gozagel-btn-one:hover {
+    background-color: var(--sec-color) !important;
+    border-color: var(--sec-color) !important;
+    color: var(--sec-color) !important;
+}
+
+.gozagel-btn-two:hover {
+    background-color: var(--sec-color) !important;
+    border-color: var(--sec-color) !important;
+    color: var(--sec-color) !important;
+}
+
 
 .font-cairo {
     font-family: "Cairo" !important;
