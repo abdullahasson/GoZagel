@@ -21,7 +21,6 @@
 
     /* text color */
     --txt-c1: #333333;
-
 }
 
 html {
@@ -91,7 +90,7 @@ p {
     text-align: center;
 }
 
-.gozagel-nav-header-link li:hover a {
+.gozagel-nav-link:hover a {
     color: var(--main-color) !important;
 }
 
@@ -116,6 +115,9 @@ p {
     left: -8px !important;
 }
 
+.pricing-table-area-four .pr-table-wrapper:before {
+    border: 2px solid var(--main-color) !important;
+}
 
 /* Homepage - Hero section */
 .gozagel-hero-section .hero-heading {
