@@ -40,6 +40,12 @@ p {
     color: var(--txt-c1) !important;
 }
 
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff !important;
+    background-color: var(--main-color) !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
 /* main button */
 .gozagel-btn-one {
     /* background-color: var(--btn-bg-c1) !important; */
