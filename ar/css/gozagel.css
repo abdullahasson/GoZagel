@@ -1,0 +1,273 @@
+:root {
+    --main-color: #ac1d55;
+
+    /* background color */
+    --bg-color-c1: #F9F9F9;
+
+
+    /* #FCF7EF */
+    --sec-color: #FFC9D8;
+    --color-c1:  #E8E8E8;
+    --color-c2:  #D33672;
+    --color-c3:  hsl(0, 0%, 71%);
+    --color-c4:  #FFC9D8;
+
+    /* button color */
+    --btn-bg-c1: #009688;
+    --btn-bg-c2: #FFC9D8;
+    --btn-txt-c1: #fff;
+    --btn-br-c1: #FFC9D8;
+
+
+    /* text color */
+    --txt-c1: #333333;
+}
+
+* {
+    font-family: "Cairo";
+}
+
+html {
+    scroll-padding: 92px;
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color) !important;
+}
+
+p {
+    color: var(--txt-c1) !important;
+}
+
+
+/* main button */
+.gozagel-btn-one {
+    /* background-color: var(--btn-bg-c1) !important; */
+    background: linear-gradient(to right, #ac1d55, #a31c56) !important;
+    /* padding: 14px 40px !important; */
+    color: var(--btn-txt-c1) !important;
+    /* text-transform: uppercase !important; */
+    /* letter-spacing: 2px !important; */
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    /* border: 2px dashed #00BFA6 !important; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+    transition: .4s !important;
+    /* border-color: var(--btn-br-c1) !important; */
+    border: none !important;
+}
+
+.gozagel-btn-one:hover {
+    background: linear-gradient(to left, #ac1d55, #a31c56) !important;
+}
+
+.gozagel-btn-two {
+    /* background-color: var(--btn-bg-c1) !important; */
+    background: #fff;
+    /* padding: 14px 40px !important; */
+    color: var(--main-color) !important;
+    /* text-transform: uppercase !important; */
+    /* letter-spacing: 2px !important; */
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    /* border: 2px dashed #00BFA6 !important; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+    transition: .4s !important;
+    border-color: var(--main-color) !important;
+    box-sizing: border-box;
+    /* border: none !important; */
+}
+
+.gozagel-btn-two:hover {
+    background: linear-gradient(to right, #ac1d55, #a31c56) !important;
+    color: #fff !important;
+}
+
+   
+
+
+.font-cairo {
+    font-family: "Cairo" !important;
+}
+
+.gozagel-header .gozagel-signUp-action {
+    background-color: var(--main-color);
+    width: 130px;
+    margin-left: 12px;
+    border-radius: 8px;
+    color: #fff !important;
+    text-align: center;
+}
+
+.gozagel-nav-link:hover a {
+    color: var(--main-color) !important;
+}
+
+/* Pricing */
+.gozagel-pricing-plans-container {
+    align-items: start !important;
+}
+.gozagel-pricing-list {
+    padding-left: 0 !important;
+    padding-bottom: 35px !important;
+}
+.gozagel-pricing-list > li {
+    font-size: medium !important;
+}
+.gozagel-pricing-list > li.disable {
+    color: #B9B9B9 !important;
+}
+.gozagel-pricing-list > li.disable::before {
+    content: url(../images/icon/64.svg) !important;
+    position: absolute !important;
+    top: 5px !important;
+    right: -14px !important;
+}
+
+.pricing-table-area-four .pr-table-wrapper:before {
+    border: 2px solid var(--main-color) !important;
+}
+
+/* Homepage - Hero section */
+.gozagel-hero-section .hero-heading {
+    font-size: 66px !important;
+}
+.gozagel-hero-section .gozagel-hero-section-image {
+    left: 70px !important;
+    right: auto;
+}
+@media (max-width: 575px) {
+    .gozagel-hero-section .hero-heading {
+        font-size: 44px !important;
+    }
+    .gozagel-hero-section .gozagel-hero-section-image {
+        left: auto !important;
+        right: auto;
+        margin-top: 45px;
+    }
+    .gozagel-hero-section .cta {
+        flex-direction: column;
+    } 
+}
+@media (max-width: 380px) {
+    .gozagel-hero-section .cta {
+        flex-direction: column;
+    } 
+}
+
+
+/* Mega Sign Up */
+.gozagel-mega {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.gozagel-mega h2 {
+    font-size: 56px !important;
+}
+@media (max-width: 575px) {
+    .gozagel-mega h2 {
+        font-size: 44px !important;
+    }
+}
+@media (max-width: 380px) {
+    .gozagel-mega h2 {
+        font-size: 31px !important;
+    }
+}
+
+/* Advantages */
+.gozagel-advantages-block {
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.04) !important;
+}
+
+
+
+/* 
+    Integrations | Separate Page
+*/
+
+.gozagel-integrations-sales_channel-logo-list ul > li img {
+    width: 74px;
+}
+
+
+/* T&C separte page */
+.gozagel-tc-sm-nav {
+    position: fixed !important;
+    top: 92px !important;
+    height: calc(100vh - 92px) !important;
+    width: 32% !important;
+    z-index: 9999;
+    overflow-y: scroll;
+    background: #FCF7EF !important;
+}
+
+.gozagel-tc-sm-nav::-webkit-scrollbar {
+    width: 1px;
+}
+
+.gozagel-tc-bg-ct h2,
+.gozagel-tc-bg-ct h3,
+.gozagel-tc-sm-nav li a {
+    font-family: 'Cairo' !important;
+}
+
+/* Prohibited Items for International Shipping */
+.gozagel-non-compensation-card {
+    min-height: 309px;
+}
+
+.gozagel-non-compensation-card h3 {
+    padding-top: 0 !important;
+}
+
+/* Prohibited Items Page */
+.drags > li.disable::before {
+    content: url(../images/icon/64.svg) !important;
+    position: absolute !important;
+    right: 0px !important;
+    color: inherit !important;
+}
+@media (max-width: 575px) {
+    .gozagel-prohibited-list > h2 {
+        font-size: 44px;
+    } 
+}
+@media (max-width: 380px) {
+    .gozagel-prohibited-list > h2 {
+        font-size: 23px;
+    } 
+}
+
+/* Features */
+.gozagel-features-block p {
+    padding-bottom: 32px;
+}
+
+.gozagel-features-block ul li {
+    padding-bottom: 16px;
+}
+
+.gozagel-features-block ul li p {
+    padding-bottom: 0;
+}
+
+/* Packaging */
+.gozagel-block-image {
+    display: flex;
+    justify-content: end;
+}
+
+.gozagel-block-image > img {
+    max-height: 350px;
+}
+
+/* Privacy Policy */
+@media (max-width: 575px) {
+    .gozagel-privacy-GDPR .title-style-five > h2 {
+        font-size: 28px;
+    }
+}

@@ -1,5 +1,5 @@
 :root {
-    --main-color: #732154;
+    --main-color: #ac1d55;
 
     /* background color */
     --bg-color-c1: #F9F9F9;
@@ -36,16 +36,10 @@ p {
     color: var(--txt-c1) !important;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #fff !important;
-    background-color: var(--main-color) !important;
-    border-color: #dee2e6 #dee2e6 #fff;
-}
-
 /* main button */
 .gozagel-btn-one {
     /* background-color: var(--btn-bg-c1) !important; */
-    background: linear-gradient(to right, #732154, #A0528D) !important;
+    background: linear-gradient(to right, #ac1d55, #a31c56) !important;
     /* padding: 14px 40px !important; */
     color: var(--btn-txt-c1) !important;
     /* text-transform: uppercase !important; */
@@ -60,7 +54,7 @@ p {
 }
 
 .gozagel-btn-one:hover {
-    background: linear-gradient(to left, #732154, #A0528D) !important;
+    background: linear-gradient(to left, #ac1d55, #a31c56) !important;
 }
 
 .gozagel-btn-two {
@@ -81,7 +75,7 @@ p {
 }
 
 .gozagel-btn-two:hover {
-    background: linear-gradient(to right, #732154, #A0528D) !important;
+    background: linear-gradient(to right, #ac1d55, #a31c56) !important;
     color: #fff !important;
 }
 
