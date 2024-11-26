@@ -79,17 +79,6 @@ p {
     color: #fff !important;
 }
 
-
-
-.gozagel-header .gozagel-signUp-action {
-    background-color: var(--main-color);
-    width: 130px;
-    margin-left: 12px;
-    border-radius: 8px;
-    color: #fff !important;
-    text-align: center;
-}
-
 .gozagel-nav-link:hover a {
     color: var(--main-color) !important;
 }
@@ -180,25 +169,8 @@ p {
     Integrations | Separate Page
 */
 
-.gozagel-integrations-sales_channel-logo-list ul > li img {
-    width: 74px;
-}
-
 
 /* T&C separte page */
-.gozagel-tc-sm-nav {
-    position: fixed !important;
-    top: 92px !important;
-    height: calc(100vh - 92px) !important;
-    width: 32% !important;
-    z-index: 9999;
-    overflow-y: scroll;
-    background: #FCF7EF !important;
-}
-
-.gozagel-tc-sm-nav::-webkit-scrollbar {
-    width: 1px;
-}
 
 /* Prohibited Items for International Shipping */
 .gozagel-non-compensation-card {
@@ -230,17 +202,6 @@ p {
 
 
 /* Features */
-.gozagel-features-block p {
-    padding-bottom: 32px;
-}
-
-.gozagel-features-block ul li {
-    padding-bottom: 16px;
-}
-
-.gozagel-features-block ul li p {
-    padding-bottom: 0;
-}
 
 /* Packaging */
 .gozagel-block-image {
@@ -255,8 +216,3 @@ p {
 }
 
 /* Privacy Policy */
-@media (max-width: 575px) {
-    .gozagel-privacy-GDPR .title-style-five > h2 {
-        font-size: 28px;
-    }
-}
