@@ -78,6 +78,7 @@
   .title-style-seven h2 {font-size: 38px;}
   .title-style-seven p {font-size: 18px;}
   .theme-main-menu {padding: 30px 15px;}
+  .theme-main-menu.sticky-menu.fixed {padding: 20px 15px;}
   .theme-menu-three #mega-menu-holder {margin-left: auto;}
   .theme-main-menu>div {position: static;}
   .theme-menu-three .logo {left: 15px;}
