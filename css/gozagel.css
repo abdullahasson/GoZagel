@@ -82,7 +82,7 @@ p {
   --list_bg: var(--btn_bg);
   --list_border_radius: var(--btn_border_radius);
   --list_gap: 0.1875em;
-  --list_btn_hover_bg: #c22963;
+  --list_btn_hover_bg: #c0507b83;
   --list_btn_active: #b9b9b970;
   --list_btn_border_radius: 0.25em;
   --list_btn_padding: 0.35em 1em;
