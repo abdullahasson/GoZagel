@@ -40,165 +40,110 @@ p {
     color: var(--txt-c1) !important;
 }
 
-.gozagel-switch {
-    margin-left: 23px;
-    height: 36px;
-    width: 72px;
-    /* background-color: var(--btn-bg-c1) !important; */
-    /* padding: 14px 40px !important; */
-    color: #ac1d55 !important;
-    /* text-transform: uppercase !important; */
-    /* letter-spacing: 2px !important; */
-    cursor: pointer !important;
-    border-radius: 10px !important;
-    /* border: 2px dashed #00BFA6 !important; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
-    transition: .4s !important;
-    border: 1px solid;
-    border-color: var(--main-color) !important;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
+/* Language switch */
+.dropdown button {
+    /* background-color: #a31c56; */
+    /* min-width: 130px; */
+    width: max-content;
+    height: 40px;
+    border-radius: 8px;
+    /* padding: 0 8px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     justify-content: space-evenly;
-    gap: 12px;
-    /* border: none !important; */
-}
-.theme-popup {
-  /* total */
-  --total_text_color: #e0e0e0;
-  --total_font_family: Menlo, Roboto Mono, monospace;
-  /* button */
-  --btn_bg: #ac1d55;
-  --btn_padding: 0.5em;
-  --btn_height: 2em;
-  --btn_border_radius: 0.3125em;
-  --btn_outline_width: 0.0625em;
-  --btn_outline_color: #A0A0A0;
-  --btn_outline_offset: 0.0625em;
-  --btn_gap: 0.3125em;
-  /* list */
-  --list_padding: 0.5em;
-  --list_bg: var(--btn_bg);
-  --list_border_radius: var(--btn_border_radius);
-  --list_gap: 0.1875em;
-  --list_btn_hover_bg: #c0507b83;
-  --list_btn_active: #b9b9b970;
-  --list_btn_border_radius: 0.25em;
-  --list_btn_padding: 0.35em 1em;
-  --list_btn_gap: 0.3375em;
-  --list_btn_outline_width: 0.0625em;
-  --list_btn_outline_color: rgb(212, 210, 210);
-  --list_offset: 0.35em;
-  --list_btn_font_size: 14px;
-  --list_position_left: unset;
-  --list_position_right: -1px;
-  /* 👆 if you want to change sides just switch one property */
-  /* from properties to "unset" and the other to 0 */
+    margin-left: 22px;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.theme-popup__button .theme-popup__icons svg,
-#light,
-#dark, 
-#default, 
-#checkbox,
-.theme-popup__list-container {
-  display: none;
+.dropdown button img {
+    margin: 0 0 0 8px;
 }
-
-.theme-popup {
-  color: var(--total_text_color);
-  font-family: var(--total_font_family);
-  position: relative;
-  user-select: none;
+.dropdown button img {
+    width: 28px;
 }
-
-.theme-popup__list-container {
-  position: absolute;
-  left: var(--list_position_left);
-  right: var(--list_position_right);
-  top: calc(var(--btn_height) + var(--list_offset));
-}
-
-.theme-popup__icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-}
-
-.theme-popup__button {
-  line-height: var(--btn_height);
-  background-color: var(--btn_bg);
-  padding: 0 var(--btn_padding);
-  display: inline-flex;
-  align-items: center;
-  column-gap: var(--btn_gap);
-  border-radius: var(--btn_border_radius);
-  border: none;
-  color: inherit;
-  font-family: inherit;
-  outline: none;
-  font-weight: bold;
-}
-
-.theme-popup__list {
-  margin: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  /* padding: 0 var(--list_padding); */
-  border-radius: var(--list_border_radius);
-  background-color: #fff;
-  border: 1px solid var(--main-color);
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.2px;
-  width: 74px;
-
-  & li a {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: center;
+.dropdown button,
+.dropdown-content a,
+.dropdown-content li {
     display: flex;
     align-items: center;
-    justify-content: end;
+    font-size: 14px;
+    font-weight: 500;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: #000000 transparent transparent transparent;
+    margin: 0 5px 0 0;
+}
 
-    & label {
-        width: 100%;
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 7px;
+    margin: 1px 0 0 0;
+    width: 105px;
+
+    & a {
+        padding: 0;
+        margin: 0;
+        padding: 0 6px;
         display: flex;
+        gap: 5px;
         align-items: center;
-        justify-content: end;
-        column-gap: var(--list_btn_gap);
-        border-radius: 0;
-        white-space: nowrap;
-        cursor: pointer;
-        padding: 0 4px;
+        justify-content: start;
+
+        &:hover span {
+            color: #a31c56 !important;
+        }
+        
+        &.disabled {
+            background-color: #e9ecef;
+        }
+
+
+        & img {
+            width: 28px;
+        }
+
+        & span {
+            font-size: 15px;
+        }
     }
-  }
 }
 
-
-.theme-popup__list label span {
-  font-size: var(--list_btn_font_size);
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:focus-within .dropdown-content {
+    display: block;
 }
-
-/* actions */
-#checkbox:checked~.theme-popup__button {
-  outline: var(--btn_outline_width) solid var(--btn_outline_color);
-  outline-offset: var(--btn_outline_offset);
+/* Animate the dropdown content */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-
-#checkbox:checked~.theme-popup__list-container {
-  display: block;
+.dropdown-content {
+    animation: slideIn 0.3s ease-out;
 }
-
-.theme-popup__list label:hover,
-.theme-popup__list label.active,
-.theme-popup__button:hover,
-#checkbox:checked~.theme-popup__button {
-  background-color: var(--list_btn_hover_bg);
-  color: #fff;
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #c2c9d2;
 }
 
 /* main button */

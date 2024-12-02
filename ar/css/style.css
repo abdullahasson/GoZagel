@@ -1342,7 +1342,7 @@ body .theme-btn-fourteen:hover {background: #6F6CFF;}
   color: #000;
   transition: all 0.3s ease-in-out;
 }
-.theme-menu-three .user-login-button li a:hover {color: var(--blue-light);}
+/* .theme-menu-three .user-login-button li a:hover {color: var(--blue-light);} */
 .theme-menu-three .user-login-button .signIn-action img {margin-left: 12px; margin-top: -3px;}
 .theme-menu-three .user-login-button li .signUp-action {
   border:2px solid #000;
